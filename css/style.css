@@ -1,0 +1,28 @@
+
+/* Reset sederhana */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter, Arial, sans-serif;color:#111;background:#fff;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+header{background:#000;color:#FFD700;padding:14px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:0 20px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{height:48px}
+nav a{color:#FFD700;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:60px 20px;background:linear-gradient(90deg, #ffd7001a, #ffd70008)}
+.hero-text{flex:1}
+.hero-text h1{font-size:2.1rem;color:#111;margin-bottom:8px}
+.hero-text p{color:#222;margin-bottom:12px}
+.btn{display:inline-block;background:#FFD700;color:#000;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700}
+.hero-image{flex:1;text-align:right}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:30px 20px}
+.card{background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);overflow:hidden}
+.card img{width:100%;display:block;height:200px;object-fit:cover}
+.card-body{padding:16px}
+.price{font-weight:800;color:#000;margin-top:8px}
+.footer{background:#000;color:#FFD700;padding:18px;text-align:center;margin-top:30px}
+@media(max-width:800px){
+  .hero{flex-direction:column;text-align:center;padding:40px 16px}
+  .hero-image{text-align:center}
+  .header-inner{padding:0 12px}
+  nav{margin-top:8px}
+}
